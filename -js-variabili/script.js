@@ -10,7 +10,7 @@ function calcolaPrezzo(km, eta) {
         // Sconto del 20% per i minorenni
         prezzoBase *= 0.80;
     } else if (eta > 65) {
-        // Sconto del 40% per gli over 65
+        // Sconto del 40% per gli over 65\
         prezzoBase *= 0.60;
     }
 
@@ -29,4 +29,4 @@ let eta = parseInt(prompt("Inserisci l'età del passeggero:"));
 let prezzoTotale = calcolaPrezzo(km, eta);
 
 // Visualizzare il risultato in forma umana
-alert(`Il prezzo del biglietto è: €${prezzoTotale}`);
+console.log(`Il prezzo del biglietto è: €${prezzoTotale}`);
